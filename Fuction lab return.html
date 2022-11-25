@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Nick Singi</h2>
+
+<p id="trial"></p>
+
+<script>
+class House {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age(x) {
+    return x - this.year;
+  }
+}
+
+let date = new Date();
+let year = date.getFullYear();
+
+let myHouse = new House("Mansion", 2019);
+document.getElementById("trial").innerHTML=
+"My House is " + myHouse.age(year) + " years old.";
+</script>
+
+</body>
+</html>
